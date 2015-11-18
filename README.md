@@ -1,8 +1,11 @@
 #プルリクエストによる開発を行う
+参考: http://www.backlog.jp/git-guide/pull-request/pull-request1_3.html
 
-## gitのワークフロー(まだ完全ではないです。
+
+## gitのワークフロー(未完成
 
 branch_nameは、「述語_名詞」ぐらいにすれば良い。
+
 下記のbranch_nameとfilenameは便宜置き換えてください。
 
 * git branchでmasterに*が付いているかを確認。いなければ、git checkout master
