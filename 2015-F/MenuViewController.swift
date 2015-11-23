@@ -28,7 +28,7 @@ class MenuViewController: UIViewController {
         playButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         playButton.layer.cornerRadius = 20.0
         playButton.layer.position = CGPoint(x: self.view.frame.width/2, y:500)
-        playButton.addTarget(self, action: "onClickplayButton:", forControlEvents: .TouchUpInside)
+        playButton.addTarget(self, action: "onClickPlayButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(playButton)
         
         //トレーニンリストボタンを設置
@@ -43,8 +43,9 @@ class MenuViewController: UIViewController {
         listButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         listButton.layer.cornerRadius = 20.0
         listButton.layer.position = CGPoint(x: self.view.frame.width/2, y:100)
-        listButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
+        listButton.addTarget(self, action: "onClickListButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(listButton)
+       
         
         //カレンダーボタンを設置
         let calButton = UIButton()
@@ -60,14 +61,48 @@ class MenuViewController: UIViewController {
         calButton.layer.position = CGPoint(x: self.view.frame.width/2, y:300)
         calButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(calButton)
-        
-        
     }
+    
+    internal func onClickPlayButton(sender: UIButton){
+        if (NSUserDefaults.standardUserDefaults().dictionaryRepresentation()["name"] == nil){
+            let userNameSettingView: UIViewController = UserNameSettingView()
+            self.presentViewController(userNameSettingView, animated: true, completion: nil)
+        }else{
+            let setting = AppSetting()
+            selectT(setting.list[0],view: self)
+        }
+    }
+    
+    internal func onClickListButton(sender: UIButton){
+        let list: UIViewController = List()
+        self.presentViewController(list, animated: true, completion: nil)
+    }
+    
+    internal func selectT(name: String,view:UIViewController){
+        switch name {
+        case "Hukkin1":
+            let story1: UIViewController = Story1()
+            view.presentViewController(story1, animated: true, completion: nil)
+        case "Haikin1":
+            let haikin1: UIViewController = Haikin1()
+            view.presentViewController(haikin1, animated: true, completion: nil)
+        case "Twist":
+            let twist: UIViewController = TwistViewController()
+            view.presentViewController(twist, animated: true, completion: nil)
+        case "Squat":
+            let squat: UIViewController = SquatViewController()
+            view.presentViewController(squat, animated: true, completion: nil)
+
+        default:
+            break // do nothing
+        }
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }   
     
     
 }
