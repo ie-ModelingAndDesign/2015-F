@@ -1,4 +1,4 @@
-//
+
 //  MenuViewController.swift
 //  2015-F
 //
@@ -14,9 +14,8 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor.blueColor()
         
-        //playボタンを設置
+              //playボタンを設置
         let playButton = UIButton()
         playButton.frame = CGRectMake(0,0,250,100)
         playButton.backgroundColor = UIColor.redColor()
@@ -30,25 +29,23 @@ class MenuViewController: UIViewController {
         playButton.layer.position = CGPoint(x: self.view.frame.width/2, y:500)
         playButton.addTarget(self, action: "onClickplayButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(playButton)
-        
+      
         //トレーニンリストボタンを設置
         let listButton = UIButton()
-        listButton.frame = CGRectMake(0,0,250,100)
+        listButton.frame = CGRectMake(0,0,100,50)
         listButton.backgroundColor = UIColor.redColor()
         listButton.layer.masksToBounds = true
-        listButton.setTitle("トレーニングリスト", forState: UIControlState.Normal)
-        listButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        listButton.setTitle("トレーニングリスト", forState: UIControlState.Highlighted)
+        listButton.setTitle("リスト", forState: UIControlState.Normal)
         listButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         listButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         listButton.layer.cornerRadius = 20.0
-        listButton.layer.position = CGPoint(x: self.view.frame.width/2, y:100)
+        listButton.layer.position = CGPoint(x: 100, y:700)
         listButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(listButton)
-        
+       
         //カレンダーボタンを設置
         let calButton = UIButton()
-        calButton.frame = CGRectMake(0,0,250,100)
+        calButton.frame = CGRectMake(0,0,100,50)
         calButton.backgroundColor = UIColor.redColor()
         calButton.layer.masksToBounds = true
         calButton.setTitle("カレンダー", forState: UIControlState.Normal)
@@ -57,17 +54,13 @@ class MenuViewController: UIViewController {
         calButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         calButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         calButton.layer.cornerRadius = 20.0
-        calButton.layer.position = CGPoint(x: self.view.frame.width/2, y:300)
+        calButton.layer.position = CGPoint(x:300, y:700)
         calButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(calButton)
         
-        
     }
-    
-    override func didReceiveMemoryWarning() {
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 }
