@@ -77,7 +77,6 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
         saveButton.layer.masksToBounds = true
         saveButton.setTitle("Next", forState: .Normal)
         saveButton.layer.cornerRadius = 20.0
-<<<<<<< HEAD
         saveButton.layer.position = CGPoint(x: (self.view.bounds.width/4)*3 , y: 600)
         saveButton.addTarget(self, action: "onClickSaveButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(saveButton)
