@@ -69,7 +69,7 @@ class UserSettingViewController: UIViewController {
         womanSwicth.tintColor = UIColor.blackColor()
         womanSwicth.addTarget(self, action: "onClickSwicth:", forControlEvents: UIControlEvents.ValueChanged)
         womanSwicth.tag = 2
-        
+        womanSwicth.on = true
         self.view.addSubview(womanSwicth)
         
         
@@ -90,13 +90,6 @@ class UserSettingViewController: UIViewController {
     }
     
     internal func onClickSwicth(sender: UISwitch){
-        if ( sender.tag == 1 && womanSwicth.on){
-            womanSwicth.on = false;
-        }
-        
-        if ( sender.tag == 2 && jentluSwicth.on){
-            jentluSwicth.on = false;
-        }
     }
     
     override func didReceiveMemoryWarning() {
