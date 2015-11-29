@@ -15,8 +15,6 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
     let nameTextField = UITextField(frame: CGRectMake(0,0,200,50))
     let ud = NSUserDefaults.standardUserDefaults()
 
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
@@ -33,6 +31,7 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
         nameTextField.borderStyle = UITextBorderStyle.RoundedRect
         nameTextField.delegate = self
         nameTextField.layer.position = CGPoint(x:self.view.bounds.width/2,y:200);
+        nameTextField.delegate = self
         self.view.addSubview(nameTextField)
 
 
@@ -78,6 +77,7 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
         saveButton.layer.masksToBounds = true
         saveButton.setTitle("Next", forState: .Normal)
         saveButton.layer.cornerRadius = 20.0
+<<<<<<< HEAD
         saveButton.layer.position = CGPoint(x: (self.view.bounds.width/4)*3 , y: 600)
         saveButton.addTarget(self, action: "onClickSaveButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(saveButton)
