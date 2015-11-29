@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 class UserSettingViewController: UIViewController {
+    let jentluSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+    let womanSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +48,8 @@ class UserSettingViewController: UIViewController {
         let jentluSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
         jentluSwicth.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y: 300)
         jentluSwicth.tintColor = UIColor.blackColor()
-        //jentluSwicth.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        jentluSwicth.addTarget(self, action: "onClickSwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        jentluSwicth.tag = 1
         self.view.addSubview(jentluSwicth)
         
         //女ラベル
@@ -63,7 +67,9 @@ class UserSettingViewController: UIViewController {
         let womanSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
         womanSwicth.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y: 400)
         womanSwicth.tintColor = UIColor.blackColor()
-        //jentluSwicth.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        womanSwicth.addTarget(self, action: "onClickSwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        womanSwicth.tag = 2
+        
         self.view.addSubview(womanSwicth)
         
         
@@ -81,6 +87,16 @@ class UserSettingViewController: UIViewController {
         saveButton.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y:600)
         self.view.addSubview(saveButton)
 
+    }
+    
+    internal func onClickSwicth(sender: UISwitch){
+        if ( sender.tag == 1 && womanSwicth.on){
+            womanSwicth.on = false;
+        }
+        
+        if ( sender.tag == 2 && jentluSwicth.on){
+            jentluSwicth.on = false;
+        }
     }
     
     override func didReceiveMemoryWarning() {
