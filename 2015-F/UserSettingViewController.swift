@@ -24,21 +24,63 @@ class UserSettingViewController: UIViewController {
         
         
         //テキスト入力するとこ
-        let nameTextField = UITextField(frame: CGRectMake(0,0,200,30))
+        let nameTextField = UITextField(frame: CGRectMake(0,0,200,50))
         nameTextField.borderStyle = UITextBorderStyle.RoundedRect
         nameTextField.layer.position = CGPoint(x:self.view.bounds.width/2,y:200);
         self.view.addSubview(nameTextField)
         
         
-        //男ボタン
-        let jentluLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,200))
+        //男ラベル
+        let jentluLabel: UILabel = UILabel(frame: CGRectMake(0,0,600,600))
         jentluLabel.layer.masksToBounds = true
         jentluLabel.layer.cornerRadius = 20.0
         jentluLabel.text = "男"
         jentluLabel.textColor = UIColor.blueColor()
         jentluLabel.textAlignment = NSTextAlignment.Center
-        jentluLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 250)
+        jentluLabel.layer.position = CGPoint(x: (self.view.bounds.width/4),y: 300)
         self.view.addSubview(jentluLabel)
+
+        
+        //男のスイッチ
+        let jentluSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+        jentluSwicth.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y: 300)
+        jentluSwicth.tintColor = UIColor.blackColor()
+        //jentluSwicth.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        self.view.addSubview(jentluSwicth)
+        
+        //女ラベル
+        let womanLabel: UILabel = UILabel(frame: CGRectMake(0,0,600,600))
+        womanLabel.layer.masksToBounds = true
+        womanLabel.layer.cornerRadius = 20.0
+        womanLabel.text = "女"
+        womanLabel.textColor = UIColor.blueColor()
+        womanLabel.textAlignment = NSTextAlignment.Center
+        womanLabel.layer.position = CGPoint(x: (self.view.bounds.width/4),y: 400)
+        self.view.addSubview(womanLabel)
+
+        
+        //女のスイッチ
+        let womanSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+        womanSwicth.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y: 400)
+        womanSwicth.tintColor = UIColor.blackColor()
+        //jentluSwicth.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        self.view.addSubview(womanSwicth)
+        
+        
+        //保存ボタン
+        let saveButton = UIButton()
+        saveButton.frame = CGRectMake(0,0,100,100)
+        saveButton.backgroundColor = UIColor.redColor()
+        saveButton.layer.masksToBounds = true
+        saveButton.setTitle("保存", forState: UIControlState.Normal)
+        saveButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        saveButton.setTitle("保存", forState: UIControlState.Highlighted)
+        saveButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        saveButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
+        saveButton.layer.cornerRadius = 20.0
+        saveButton.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y:600)
+        self.view.addSubview(saveButton)
+
     }
     
     override func didReceiveMemoryWarning() {
