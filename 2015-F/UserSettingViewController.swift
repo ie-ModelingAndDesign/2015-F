@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-class UserSettingViewController: UIViewController {
+class UserSettingViewController: UIViewController ,UITextFieldDelegate{
     let jentluSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
     let womanSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+    let nameTextField = UITextField(frame: CGRectMake(0,0,200,50))
 
     
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ class UserSettingViewController: UIViewController {
         let nameTextField = UITextField(frame: CGRectMake(0,0,200,50))
         nameTextField.borderStyle = UITextBorderStyle.RoundedRect
         nameTextField.layer.position = CGPoint(x:self.view.bounds.width/2,y:200);
+        nameTextField.delegate = self
         self.view.addSubview(nameTextField)
         
         
@@ -85,11 +87,18 @@ class UserSettingViewController: UIViewController {
         saveButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         saveButton.layer.cornerRadius = 20.0
         saveButton.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y:600)
+        womanSwicth.addTarget(self, action: "onClickSaveButton:", forControlEvents: UIControlEvents.ValueChanged)
         self.view.addSubview(saveButton)
 
     }
     
-    internal func onClickSwicth(sender: UISwitch){
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    internal func onClickSaveButton(sender: UISwitch){
+        
     }
     
     override func didReceiveMemoryWarning() {
