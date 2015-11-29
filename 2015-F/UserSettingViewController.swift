@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-class UserSettingViewController: UIViewController {
+class UserSettingViewController: UIViewController ,UITextFieldDelegate{
+    let jentluSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+    let womanSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
+    let nameTextField = UITextField(frame: CGRectMake(0,0,200,50))
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,7 @@ class UserSettingViewController: UIViewController {
         let nameTextField = UITextField(frame: CGRectMake(0,0,200,50))
         nameTextField.borderStyle = UITextBorderStyle.RoundedRect
         nameTextField.layer.position = CGPoint(x:self.view.bounds.width/2,y:200);
+        nameTextField.delegate = self
         self.view.addSubview(nameTextField)
         
         
@@ -45,7 +50,8 @@ class UserSettingViewController: UIViewController {
         let jentluSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
         jentluSwicth.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y: 300)
         jentluSwicth.tintColor = UIColor.blackColor()
-        //jentluSwicth.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        jentluSwicth.addTarget(self, action: "onClickSwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        jentluSwicth.tag = 1
         self.view.addSubview(jentluSwicth)
         
         //女ラベル
@@ -63,7 +69,9 @@ class UserSettingViewController: UIViewController {
         let womanSwicth: UISwitch = UISwitch(frame: CGRectMake(0,0,200,200))
         womanSwicth.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y: 400)
         womanSwicth.tintColor = UIColor.blackColor()
-        //jentluSwicth.addTarget(self, action: "onClickMySwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        womanSwicth.addTarget(self, action: "onClickSwicth:", forControlEvents: UIControlEvents.ValueChanged)
+        womanSwicth.tag = 2
+        womanSwicth.on = true
         self.view.addSubview(womanSwicth)
         
         
@@ -79,8 +87,18 @@ class UserSettingViewController: UIViewController {
         saveButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         saveButton.layer.cornerRadius = 20.0
         saveButton.layer.position = CGPoint(x: (self.view.frame.width/4)*3, y:600)
+        womanSwicth.addTarget(self, action: "onClickSaveButton:", forControlEvents: UIControlEvents.ValueChanged)
         self.view.addSubview(saveButton)
 
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    internal func onClickSaveButton(sender: UISwitch){
+        
     }
     
     override func didReceiveMemoryWarning() {
