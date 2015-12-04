@@ -16,6 +16,7 @@
 		8D0CF4D51BFB2C5D004AEF4A /* _015_FUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0CF4D41BFB2C5D004AEF4A /* _015_FUITests.swift */; };
 		8D0E26681C072EFB00D05DF5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E26671C072EFB00D05DF5 /* MenuViewController.swift */; };
 		8D0E266A1C0732DA00D05DF5 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E26691C0732DA00D05DF5 /* UserSettingViewController.swift */; };
+		8D0E266C1C11653F00D05DF5 /* HukkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E266B1C11653F00D05DF5 /* HukkinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8D0CF4D61BFB2C5D004AEF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0E26671C072EFB00D05DF5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8D0E26691C0732DA00D05DF5 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
+		8D0E266B1C11653F00D05DF5 /* HukkinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HukkinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				8D0CF4B61BFB2C5C004AEF4A /* ViewController.swift */,
 				8D0CF4B81BFB2C5C004AEF4A /* Main.storyboard */,
 				8D0E26691C0732DA00D05DF5 /* UserSettingViewController.swift */,
+				8D0E266B1C11653F00D05DF5 /* HukkinViewController.swift */,
 				8D0E26671C072EFB00D05DF5 /* MenuViewController.swift */,
 				8D0CF4BB1BFB2C5C004AEF4A /* Assets.xcassets */,
 				8D0CF4BD1BFB2C5C004AEF4A /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0E266C1C11653F00D05DF5 /* HukkinViewController.swift in Sources */,
 				8D0CF4B71BFB2C5C004AEF4A /* ViewController.swift in Sources */,
 				8D0E26681C072EFB00D05DF5 /* MenuViewController.swift in Sources */,
 				8D0E266A1C0732DA00D05DF5 /* UserSettingViewController.swift in Sources */,
