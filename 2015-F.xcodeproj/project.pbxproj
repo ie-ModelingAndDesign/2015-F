@@ -17,6 +17,8 @@
 		8D0E26681C072EFB00D05DF5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E26671C072EFB00D05DF5 /* MenuViewController.swift */; };
 		8D0E266A1C0732DA00D05DF5 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E26691C0732DA00D05DF5 /* UserSettingViewController.swift */; };
 		8D0E266C1C11653F00D05DF5 /* HukkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E266B1C11653F00D05DF5 /* HukkinViewController.swift */; };
+		8D0E26701C116BB600D05DF5 /* HowToHukkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E266F1C116BB600D05DF5 /* HowToHukkinViewController.swift */; };
+		8D0E26761C1178DA00D05DF5 /* IMG_0575.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E26711C116CA700D05DF5 /* IMG_0575.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8D0E26671C072EFB00D05DF5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8D0E26691C0732DA00D05DF5 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		8D0E266B1C11653F00D05DF5 /* HukkinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HukkinViewController.swift; sourceTree = "<group>"; };
+		8D0E266F1C116BB600D05DF5 /* HowToHukkinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToHukkinViewController.swift; sourceTree = "<group>"; };
+		8D0E26711C116CA700D05DF5 /* IMG_0575.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0575.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +110,11 @@
 				8D0CF4B41BFB2C5C004AEF4A /* AppDelegate.swift */,
 				8D0CF4B61BFB2C5C004AEF4A /* ViewController.swift */,
 				8D0CF4B81BFB2C5C004AEF4A /* Main.storyboard */,
+				8D0E266F1C116BB600D05DF5 /* HowToHukkinViewController.swift */,
 				8D0E26691C0732DA00D05DF5 /* UserSettingViewController.swift */,
 				8D0E266B1C11653F00D05DF5 /* HukkinViewController.swift */,
 				8D0E26671C072EFB00D05DF5 /* MenuViewController.swift */,
+				8D0E26711C116CA700D05DF5 /* IMG_0575.m4v */,
 				8D0CF4BB1BFB2C5C004AEF4A /* Assets.xcassets */,
 				8D0CF4BD1BFB2C5C004AEF4A /* LaunchScreen.storyboard */,
 				8D0CF4C01BFB2C5C004AEF4A /* Info.plist */,
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0E26761C1178DA00D05DF5 /* IMG_0575.m4v in Resources */,
 				8D0CF4BF1BFB2C5C004AEF4A /* LaunchScreen.storyboard in Resources */,
 				8D0CF4BC1BFB2C5C004AEF4A /* Assets.xcassets in Resources */,
 				8D0CF4BA1BFB2C5C004AEF4A /* Main.storyboard in Resources */,
@@ -267,6 +274,7 @@
 			files = (
 				8D0E266C1C11653F00D05DF5 /* HukkinViewController.swift in Sources */,
 				8D0CF4B71BFB2C5C004AEF4A /* ViewController.swift in Sources */,
+				8D0E26701C116BB600D05DF5 /* HowToHukkinViewController.swift in Sources */,
 				8D0E26681C072EFB00D05DF5 /* MenuViewController.swift in Sources */,
 				8D0E266A1C0732DA00D05DF5 /* UserSettingViewController.swift in Sources */,
 				8D0CF4B51BFB2C5C004AEF4A /* AppDelegate.swift in Sources */,
