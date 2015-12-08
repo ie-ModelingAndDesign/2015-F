@@ -14,6 +14,7 @@
 		8D0CF4BF1BFB2C5C004AEF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0CF4BD1BFB2C5C004AEF4A /* LaunchScreen.storyboard */; };
 		8D0CF4CA1BFB2C5D004AEF4A /* _015_FTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0CF4C91BFB2C5D004AEF4A /* _015_FTests.swift */; };
 		8D0CF4D51BFB2C5D004AEF4A /* _015_FUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0CF4D41BFB2C5D004AEF4A /* _015_FUITests.swift */; };
+		8DBB0E8F1BFB325D007BB9F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB0E8E1BFB325D007BB9F8 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8D0CF4D01BFB2C5D004AEF4A /* 2015-FUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2015-FUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0CF4D41BFB2C5D004AEF4A /* _015_FUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _015_FUITests.swift; sourceTree = "<group>"; };
 		8D0CF4D61BFB2C5D004AEF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DBB0E8E1BFB325D007BB9F8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				8D0CF4B41BFB2C5C004AEF4A /* AppDelegate.swift */,
 				8D0CF4B61BFB2C5C004AEF4A /* ViewController.swift */,
+				8DBB0E8E1BFB325D007BB9F8 /* MenuViewController.swift */,
 				8D0CF4B81BFB2C5C004AEF4A /* Main.storyboard */,
 				8D0CF4BB1BFB2C5C004AEF4A /* Assets.xcassets */,
 				8D0CF4BD1BFB2C5C004AEF4A /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0CF4B71BFB2C5C004AEF4A /* ViewController.swift in Sources */,
+				8DBB0E8F1BFB325D007BB9F8 /* MenuViewController.swift in Sources */,
 				8D0CF4B51BFB2C5C004AEF4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				8D0CF4DB1BFB2C5D004AEF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D0CF4DC1BFB2C5D004AEF4A /* Build configuration list for PBXNativeTarget "2015-FTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				8D0CF4DE1BFB2C5D004AEF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D0CF4DF1BFB2C5D004AEF4A /* Build configuration list for PBXNativeTarget "2015-FUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				8D0CF4E11BFB2C5D004AEF4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
