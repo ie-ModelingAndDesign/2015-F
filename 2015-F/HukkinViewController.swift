@@ -20,6 +20,15 @@ class HukkinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
+        let myImage = UIImage(named: "IMG_0586.jpg")
+        let myImageView = UIImageView()
+        myImageView.image = myImage!
+        myImageView.frame = CGRectMake(0, 0, self.view.bounds.width,self.view.bounds.height)
+        self.view.addSubview(myImageView)
+        
+
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -45,7 +54,6 @@ class HukkinViewController: UIViewController {
                 self.count = self.count + 1
                 myLabel.text = String(self.count)
                 if ( self.count == 5){
-                    
                     self.onClickPlayButton()
                 }
             }
@@ -53,6 +61,8 @@ class HukkinViewController: UIViewController {
     }
     
     internal func onClickPlayButton(){
+        let story3: UIViewController =  BreakViewController()
+        self.presentViewController(story3, animated: true, completion: nil)
     }
     
     

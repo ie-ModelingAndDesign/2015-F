@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-              //playボタンを設置
+        //playボタンを設置
         let playButton = UIButton()
         playButton.frame = CGRectMake(0,0,250,100)
         playButton.backgroundColor = UIColor.redColor()
@@ -57,8 +57,14 @@ class MenuViewController: UIViewController {
         calButton.layer.position = CGPoint(x:300, y:700)
         calButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(calButton)
-        
     }
+    
+    internal func onClickplayButton(sender: UIButton){
+        let mySecondViewController: UIViewController = StartDietViewController()
+        mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        self.presentViewController(mySecondViewController, animated: true, completion: nil)
+    }
+    
         override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
