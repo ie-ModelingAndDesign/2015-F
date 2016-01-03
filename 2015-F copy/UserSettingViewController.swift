@@ -36,14 +36,12 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
 
 
         //男ラベル
-        let jentluLabel: UILabel = UILabel(frame: CGRectMake(0,0,600,600))
-        jentluLabel.layer.masksToBounds = true
-        jentluLabel.layer.cornerRadius = 20.0
-        jentluLabel.text = "男"
-        jentluLabel.textColor = UIColor.blueColor()
-        jentluLabel.textAlignment = NSTextAlignment.Center
-        jentluLabel.layer.position = CGPoint(x: (self.view.bounds.width/4),y: 300)
-        self.view.addSubview(jentluLabel)
+        let myImageView = UIImageView(frame: CGRectMake(0,0,70,70))
+        let myImage = UIImage(named: "man.png")
+        myImageView.image = myImage
+        myImageView.layer.position = CGPoint(x: (self.view.bounds.width/4),y: 300)
+        self.view.addSubview(myImageView)
+        
 
 
         //男のスイッチ
@@ -53,14 +51,11 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
         self.view.addSubview(jentluSwicth)
 
         //女ラベル
-        let womanLabel: UILabel = UILabel(frame: CGRectMake(0,0,600,600))
-        womanLabel.layer.masksToBounds = true
-        womanLabel.layer.cornerRadius = 20.0
-        womanLabel.text = "女"
-        womanLabel.textColor = UIColor.blueColor()
-        womanLabel.textAlignment = NSTextAlignment.Center
-        womanLabel.layer.position = CGPoint(x: (self.view.bounds.width/4),y: 400)
-        self.view.addSubview(womanLabel)
+        let mImageView = UIImageView(frame: CGRectMake(0,0,70,70))
+        let wonammyImage = UIImage(named: "woman.png")
+        mImageView.image = wonammyImage
+        mImageView.layer.position = CGPoint(x: (self.view.bounds.width/4),y: 400)
+        self.view.addSubview(mImageView)
 
 
         //女のスイッチ
@@ -72,10 +67,10 @@ class UserSettingViewController: UIViewController ,UITextFieldDelegate{
 
 
         //保存ボタン
-        let saveButton: UIButton = UIButton(frame: CGRectMake(0,0,100,100))
-        saveButton.backgroundColor = UIColor.redColor();
+        let saveButton: UIButton = UIButton(frame: CGRectMake(0,0,100,50))
+        let buttonImage:UIImage = UIImage(named: "next.png")!;
+        saveButton.setBackgroundImage(buttonImage, forState: UIControlState.Normal);
         saveButton.layer.masksToBounds = true
-        saveButton.setTitle("Next", forState: .Normal)
         saveButton.layer.cornerRadius = 20.0
         saveButton.layer.position = CGPoint(x: (self.view.bounds.width/4)*3 , y: 600)
         saveButton.addTarget(self, action: "onClickSaveButton:", forControlEvents: .TouchUpInside)
