@@ -65,7 +65,7 @@ class MenuViewController: UIViewController {
         self.presentViewController(mySecondViewController, animated: true, completion: nil)
     }
     
-    internal func onClicklistButton(sender: UIButton){
+    internal func onClicklistMyButton(sender: UIButton){
         let listViewController: UIViewController = ListViewController()
         listViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
         self.presentViewController(listViewController, animated: true, completion: nil)

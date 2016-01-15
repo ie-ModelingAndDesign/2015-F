@@ -25,6 +25,13 @@ class ListViewController: UIViewController {
         homebutton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(homebutton)
         
+        
+    }
+    
+    internal func onClickMyButton(sender: UIButton){
+        let menuViewController: UIViewController = MenuViewController()
+        menuViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        self.presentViewController(menuViewController, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
