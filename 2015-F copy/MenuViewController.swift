@@ -40,7 +40,7 @@ class MenuViewController: UIViewController {
         listButton.setImage(UIImage(named: "switch.png"),forState: UIControlState.Normal)
         listButton.layer.cornerRadius = 20.0
         listButton.layer.position = CGPoint(x: 100, y:700)
-        listButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
+        listButton.addTarget(self, action: "onClicklistMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(listButton)
        
         //カレンダーボタンを設置
@@ -63,6 +63,12 @@ class MenuViewController: UIViewController {
         let mySecondViewController: UIViewController = StartDietViewController()
         mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
         self.presentViewController(mySecondViewController, animated: true, completion: nil)
+    }
+    
+    internal func onClicklistButton(sender: UIButton){
+        let listViewController: UIViewController = ListViewController()
+        listViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        self.presentViewController(listViewController, animated: true, completion: nil)
     }
     
         override func didReceiveMemoryWarning() {

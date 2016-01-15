@@ -15,6 +15,16 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let homebutton = UIButton()
+        homebutton.frame = CGRectMake(0,0,100,100)
+        let homebuttonImage:UIImage = UIImage(named: "home.png")!;
+        homebutton.setBackgroundImage(homebuttonImage, forState: UIControlState.Normal);
+        homebutton.layer.masksToBounds = true
+        homebutton.layer.position = CGPoint(x: 300, y:600)
+        homebutton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(homebutton)
+        
     }
     
     override func didReceiveMemoryWarning() {
