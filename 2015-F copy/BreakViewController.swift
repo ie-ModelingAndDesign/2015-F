@@ -36,6 +36,7 @@ class  BreakViewController: UIViewController {
         
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,300,200))
         myLabel.text = "よし！腹筋クリアだ！　30秒休もう！"
+        myLabel.backgroundColor = UIColor.whiteColor()
         myLabel.layer.borderWidth = 2.0;
         
         myLabel.textAlignment = NSTextAlignment.Center
