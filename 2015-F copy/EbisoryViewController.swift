@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class EbisoryViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class EbisoryViewController: UIViewController {
     
     //時間表示用のラベル.
     var myLabel : UILabel!
+    let random = Int(arc4random_uniform(10))
+    var tune:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
@@ -41,6 +44,12 @@ class EbisoryViewController: UIViewController {
         myLabel.font = UIFont(name: "HiraKakuProN-W3", size: 30)
         self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
+        
+        //頑張れ音
+        let tuneURL:NSURL = NSBundle.mainBundle().URLForResource("gannbare", withExtension: "wav")!
+        do { tune = try AVAudioPlayer(contentsOfURL: tuneURL, fileTypeHint: nil) } catch let error as NSError {
+            print(error.description)
+        }
         
         let stopButton = UIButton()
         stopButton.frame = CGRectMake(0,0,250,100)
@@ -85,6 +94,10 @@ class EbisoryViewController: UIViewController {
         
         if(flag == 0){
             cnt += 1
+            if(cnt == random){
+                tune.play()
+            }
+            
             if(cnt == 10){
                 self.onClickPlayButton()
             }

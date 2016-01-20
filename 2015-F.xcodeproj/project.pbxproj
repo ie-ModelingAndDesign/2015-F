@@ -42,6 +42,7 @@
 		8D2EC4911C48B18C007ADE92 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EC4901C48B18C007ADE92 /* home.png */; };
 		8D2EC4931C48BFE8007ADE92 /* nice.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EC4921C48BFE8007ADE92 /* nice.wav */; };
 		8D7A476F1C4FAF23000FC3C6 /* 321.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A476E1C4FAF23000FC3C6 /* 321.wav */; };
+		8D7A47711C4FB2F1000FC3C6 /* gannbare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A47701C4FB2F1000FC3C6 /* gannbare.wav */; };
 		8DD96CE11C4F6626000B2342 /* haikintaikan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DD96CE01C4F6626000B2342 /* haikintaikan.wav */; };
 		8DD96CE31C4F67CC000B2342 /* perfect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DD96CE21C4F67CC000B2342 /* perfect.wav */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		8D2EC4901C48B18C007ADE92 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		8D2EC4921C48BFE8007ADE92 /* nice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nice.wav; sourceTree = "<group>"; };
 		8D7A476E1C4FAF23000FC3C6 /* 321.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 321.wav; sourceTree = "<group>"; };
+		8D7A47701C4FB2F1000FC3C6 /* gannbare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gannbare.wav; sourceTree = "<group>"; };
 		8DD96CE01C4F6626000B2342 /* haikintaikan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = haikintaikan.wav; sourceTree = "<group>"; };
 		8DD96CE21C4F67CC000B2342 /* perfect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = perfect.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				8D7A476E1C4FAF23000FC3C6 /* 321.wav */,
 				8D1B2AAC1C38FC24007C1FF7 /* EbisoryViewController.swift */,
 				8D2EC4921C48BFE8007ADE92 /* nice.wav */,
+				8D7A47701C4FB2F1000FC3C6 /* gannbare.wav */,
 				8D1B2AAD1C38FC24007C1FF7 /* GoHukkinViewController.swift */,
 				8D1B2AD61C3900E2007C1FF7 /* man.png */,
 				8DD96CE01C4F6626000B2342 /* haikintaikan.wav */,
@@ -329,6 +332,7 @@
 				8DD96CE31C4F67CC000B2342 /* perfect.wav in Resources */,
 				8D1B2AC11C38FC24007C1FF7 /* Main.storyboard in Resources */,
 				8D1B2AC01C38FC24007C1FF7 /* LaunchScreen.storyboard in Resources */,
+				8D7A47711C4FB2F1000FC3C6 /* gannbare.wav in Resources */,
 				8D1B2AD71C3900E2007C1FF7 /* man.png in Resources */,
 				8D1B2AC41C38FC24007C1FF7 /* ebisory.jpg in Resources */,
 				8D1B2ABF1C38FC24007C1FF7 /* Assets.xcassets in Resources */,
