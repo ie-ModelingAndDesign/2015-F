@@ -66,9 +66,9 @@ class EbisoryViewController: UIViewController {
         startButton.addTarget(self, action: "onClickstartButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(startButton)
         
-        sleep(3)
         //タイマーを作る.
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
+        sleep(3)
     }
     
     internal func onClickstopButton(sender: UIButton){

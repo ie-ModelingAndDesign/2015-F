@@ -15,6 +15,7 @@ class HowToEbisoryViewController: UIViewController {
     var videoPlayer : AVPlayer!
     var seekBar : UISlider!
     var tune:AVAudioPlayer = AVAudioPlayer()
+    var three21:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
@@ -32,6 +33,12 @@ class HowToEbisoryViewController: UIViewController {
         tune.numberOfLoops = 1
         tune.prepareToPlay()
         tune.play()
+        
+        //321のカウント
+        let tuneURL2:NSURL = NSBundle.mainBundle().URLForResource("321", withExtension: "wav")!
+        do { three21 = try AVAudioPlayer(contentsOfURL: tuneURL2, fileTypeHint: nil) } catch let error as NSError {
+            print(error.description)
+        }
         
 
         //やり方label
@@ -58,6 +65,7 @@ class HowToEbisoryViewController: UIViewController {
     
     internal func onClickSaveButton(sender: UIButton){
         tune.stop()
+        three21.play()
         let mySecondViewController: EbisoryViewController = EbisoryViewController()
         mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
         self.presentViewController(mySecondViewController, animated: true, completion: nil)

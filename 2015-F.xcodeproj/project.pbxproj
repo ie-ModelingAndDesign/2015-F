@@ -41,6 +41,7 @@
 		8D2EC48F1C48B0D0007ADE92 /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EC48E1C48B0D0007ADE92 /* listViewController.swift */; };
 		8D2EC4911C48B18C007ADE92 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EC4901C48B18C007ADE92 /* home.png */; };
 		8D2EC4931C48BFE8007ADE92 /* nice.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EC4921C48BFE8007ADE92 /* nice.wav */; };
+		8D7A476F1C4FAF23000FC3C6 /* 321.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A476E1C4FAF23000FC3C6 /* 321.wav */; };
 		8DD96CE11C4F6626000B2342 /* haikintaikan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DD96CE01C4F6626000B2342 /* haikintaikan.wav */; };
 		8DD96CE31C4F67CC000B2342 /* perfect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DD96CE21C4F67CC000B2342 /* perfect.wav */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,7 @@
 		8D2EC48E1C48B0D0007ADE92 /* listViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
 		8D2EC4901C48B18C007ADE92 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		8D2EC4921C48BFE8007ADE92 /* nice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nice.wav; sourceTree = "<group>"; };
+		8D7A476E1C4FAF23000FC3C6 /* 321.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 321.wav; sourceTree = "<group>"; };
 		8DD96CE01C4F6626000B2342 /* haikintaikan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = haikintaikan.wav; sourceTree = "<group>"; };
 		8DD96CE21C4F67CC000B2342 /* perfect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = perfect.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +187,7 @@
 				8D1B2AAA1C38FC24007C1FF7 /* clear.jpg */,
 				8DD96CE21C4F67CC000B2342 /* perfect.wav */,
 				8D1B2AAB1C38FC24007C1FF7 /* ebisory.jpg */,
+				8D7A476E1C4FAF23000FC3C6 /* 321.wav */,
 				8D1B2AAC1C38FC24007C1FF7 /* EbisoryViewController.swift */,
 				8D2EC4921C48BFE8007ADE92 /* nice.wav */,
 				8D1B2AAD1C38FC24007C1FF7 /* GoHukkinViewController.swift */,
@@ -333,6 +336,7 @@
 				8D2EC4911C48B18C007ADE92 /* home.png in Resources */,
 				8D1B2ACB1C38FC24007C1FF7 /* IMG_0586.jpg in Resources */,
 				8D1B2AD91C3900EA007C1FF7 /* woman.png in Resources */,
+				8D7A476F1C4FAF23000FC3C6 /* 321.wav in Resources */,
 				8D1B2ABC1C38FC24007C1FF7 /* AllClear.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
