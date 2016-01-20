@@ -13,6 +13,7 @@ class EbisoryViewController: UIViewController {
     
     //時間計測用の変数.
     var cnt : Int = 0
+    var flag = 0
     
     //時間表示用のラベル.
     var myLabel : UILabel!
@@ -41,16 +42,52 @@ class EbisoryViewController: UIViewController {
         self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
         
+        let stopButton = UIButton()
+        stopButton.frame = CGRectMake(0,0,250,100)
+        stopButton.backgroundColor = UIColor.redColor()
+        stopButton.layer.masksToBounds = true
+        stopButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        stopButton.setTitle("stop", forState: UIControlState.Highlighted)
+        stopButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        stopButton.layer.cornerRadius = 20.0
+        stopButton.layer.position = CGPoint(x: self.view.frame.width/3, y:500)
+        stopButton.addTarget(self, action: "onClickstopButton:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(stopButton)
+        
+        let startButton = UIButton()
+        startButton.frame = CGRectMake(0,0,250,200)
+        startButton.backgroundColor = UIColor.redColor()
+        startButton.layer.masksToBounds = true
+        startButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        startButton.setTitle("stop", forState: UIControlState.Highlighted)
+        startButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        startButton.layer.cornerRadius = 20.0
+        startButton.layer.position = CGPoint(x: self.view.frame.width, y:500)
+        startButton.addTarget(self, action: "onClickstartButton:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(startButton)
+        
+        sleep(3)
         //タイマーを作る.
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
+    }
+    
+    internal func onClickstopButton(sender: UIButton){
+        flag = 1
+    }
+    
+    
+    internal func onClickstartButton(sender: UIButton){
+        flag = 0
     }
     
     //NSTimerIntervalで指定された秒数毎に呼び出されるメソッド.
     func onUpdate(timer : NSTimer){
         
-        cnt += 1
-        if(cnt == 10){
-            self.onClickPlayButton()
+        if(flag == 0){
+            cnt += 1
+            if(cnt == 10){
+                self.onClickPlayButton()
+            }
         }
         
         //桁数を指定して文字列を作る.

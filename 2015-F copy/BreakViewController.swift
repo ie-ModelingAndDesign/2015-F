@@ -48,14 +48,10 @@ class  BreakViewController: UIViewController {
     }
     
     func onUpdate(timer : NSTimer){
-        
         cnt += 1
         if(cnt == 10){
             self.onClickPlayButton()
         }
-        
-        //桁数を指定して文字列を作る.
-        
     }
     
     internal func onClickPlayButton(){
