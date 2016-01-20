@@ -28,15 +28,16 @@ class EbisoryViewController: UIViewController {
 
         
         //ラベルを作る.
-        myLabel = UILabel(frame: CGRectMake(0,0,200,50))
+        myLabel = UILabel(frame: CGRectMake(0,0,200,100))
         myLabel.backgroundColor = UIColor.orangeColor()
         myLabel.layer.masksToBounds = true
-        myLabel.layer.cornerRadius = 20.0
-        myLabel.text = "Time:\(cnt)"
-        myLabel.textColor = UIColor.whiteColor()
+        myLabel.backgroundColor = UIColor.whiteColor()
+        myLabel.layer.cornerRadius = 10.0
+        myLabel.textColor = UIColor.blackColor()
         myLabel.shadowColor = UIColor.grayColor()
         myLabel.textAlignment = NSTextAlignment.Center
-        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
+        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 600)
+        myLabel.font = UIFont(name: "HiraKakuProN-W3", size: 30)
         self.view.backgroundColor = UIColor.cyanColor()
         self.view.addSubview(myLabel)
         
@@ -53,7 +54,7 @@ class EbisoryViewController: UIViewController {
         }
         
         //桁数を指定して文字列を作る.
-        let str = "Time:".stringByAppendingFormat("%.1d",cnt)
+        let str = "".stringByAppendingFormat("%.1d",cnt)
         
         myLabel.text = str
         

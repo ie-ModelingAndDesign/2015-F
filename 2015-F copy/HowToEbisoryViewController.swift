@@ -14,6 +14,7 @@ class HowToEbisoryViewController: UIViewController {
     var playerItem : AVPlayerItem!
     var videoPlayer : AVPlayer!
     var seekBar : UISlider!
+    var tune:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         
@@ -23,7 +24,14 @@ class HowToEbisoryViewController: UIViewController {
         myImageView.frame = CGRectMake(0, 0, self.view.bounds.width,self.view.bounds.height)
         self.view.addSubview(myImageView)
 
-        
+        //やり方の指示音
+        let tuneURL:NSURL = NSBundle.mainBundle().URLForResource("haikintaikan", withExtension: "wav")!
+        do { tune = try AVAudioPlayer(contentsOfURL: tuneURL, fileTypeHint: nil) } catch let error as NSError {
+            print(error.description)
+        }
+        tune.numberOfLoops = 1
+        tune.prepareToPlay()
+        tune.play()
         
 
         //やり方label
@@ -49,6 +57,7 @@ class HowToEbisoryViewController: UIViewController {
     }
     
     internal func onClickSaveButton(sender: UIButton){
+        tune.stop()
         let mySecondViewController: EbisoryViewController = EbisoryViewController()
         mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
         self.presentViewController(mySecondViewController, animated: true, completion: nil)

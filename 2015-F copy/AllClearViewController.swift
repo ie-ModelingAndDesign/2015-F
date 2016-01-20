@@ -8,17 +8,31 @@
 
 import Foundation
 import UIKit
+import AVFoundation
+
 
 class AllClearViewController: UIViewController {
     
     
     var cnt : Int = 0
-    
+    var tune:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //perfect music
+        let tuneURL:NSURL = NSBundle.mainBundle().URLForResource("perfect", withExtension: "wav")!
+        do { tune = try AVAudioPlayer(contentsOfURL: tuneURL, fileTypeHint: nil) } catch let error as NSError {
+            print(error.description)
+        }
+        tune.numberOfLoops = 1
+        tune.prepareToPlay()
+        tune.play()
+        
+        
+        
+        //背景画面
         let myImage = UIImage(named: "AllClear.jpg")
         let myImageView = UIImageView()
         myImageView.image = myImage!
