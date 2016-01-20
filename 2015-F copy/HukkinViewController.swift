@@ -32,12 +32,13 @@ class HukkinViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,300,200))
-        myLabel.backgroundColor = UIColor.orangeColor()
+        let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,100))
+        myLabel.backgroundColor = UIColor.whiteColor()
         myLabel.textAlignment = NSTextAlignment.Center
-        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 500)
+        myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 600)
         self.view.addSubview(myLabel)
         myLabel.text = String(count)
+        myLabel.font = UIFont(name: "HiraKakuProN-W3", size: 30)
         
         motionManager.gyroUpdateInterval = 1
         

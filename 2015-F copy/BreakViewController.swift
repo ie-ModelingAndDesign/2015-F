@@ -8,14 +8,25 @@
 
 import Foundation
 import UIKit
+import AVFoundation
+
 
 class  BreakViewController: UIViewController {
     
     var cnt : Int = 0
+    var tune:AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let tuneURL:NSURL = NSBundle.mainBundle().URLForResource("nice", withExtension: "wav")!
+        do { tune = try AVAudioPlayer(contentsOfURL: tuneURL, fileTypeHint: nil) } catch let error as NSError {
+            print(error.description)
+        }
+        tune.numberOfLoops = 1
+        tune.prepareToPlay()
+        tune.play()
+        
         
         let myImage: UIImage = UIImage(named: "clear.jpg")!
         let myImageView: UIImageView = UIImageView()
