@@ -24,8 +24,6 @@ class ListViewController: UIViewController {
         homebutton.layer.position = CGPoint(x: 300, y:600)
         homebutton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(homebutton)
-        
-        
     }
     
     internal func onClickMyButton(sender: UIButton){
