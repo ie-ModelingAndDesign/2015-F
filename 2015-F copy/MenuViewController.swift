@@ -57,6 +57,13 @@ class MenuViewController: UIViewController {
         calButton.layer.position = CGPoint(x:300, y:700)
         calButton.addTarget(self, action: "onClickplayMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(calButton)
+        
+        //背景画面
+        let myImage = UIImage(named: "title.png")
+        let myImageView = UIImageView()
+        myImageView.image = myImage!
+        myImageView.frame = CGRectMake(0, 0, 100,100)
+        self.view.addSubview(myImageView)
     }
     
     internal func onClickplayButton(sender: UIButton){

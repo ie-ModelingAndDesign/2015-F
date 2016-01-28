@@ -24,6 +24,13 @@ class ListViewController: UIViewController {
         homebutton.layer.position = CGPoint(x: 300, y:600)
         homebutton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(homebutton)
+        
+        let myImage: UIImage = UIImage(named: "list.png")!
+        let myImageView: UIImageView = UIImageView()
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(0, 0, self.view.bounds.width,self.view.bounds.height)
+        self.view.addSubview(myImageView)
+        
     }
     
     internal func onClickMyButton(sender: UIButton){
