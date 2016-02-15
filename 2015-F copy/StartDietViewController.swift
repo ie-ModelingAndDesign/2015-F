@@ -25,6 +25,9 @@ class StartDietViewController: UIViewController {
         
         
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         
         let yesButton = UIButton()
         yesButton.frame = CGRectMake(0,0,200,40)

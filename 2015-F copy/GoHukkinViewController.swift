@@ -21,6 +21,10 @@ class GoHukkinViewController: UIViewController {
         myImageView.frame = CGRectMake(0, 0, self.view.bounds.width,self.view.bounds.height)
         self.view.addSubview(myImageView)
         
+        
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,300,200))
         myLabel.text = "さぁ。腹筋始めるぞ！　Let's 腹筋 30回"
         myLabel.backgroundColor = UIColor.whiteColor()

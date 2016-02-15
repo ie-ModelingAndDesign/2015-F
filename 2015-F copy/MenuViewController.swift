@@ -15,6 +15,9 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //play backgroundMusic
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         //playボタンを設置
         let playButton = UIButton()
         playButton.frame = CGRectMake(0,0,250,100)

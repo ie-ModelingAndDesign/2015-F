@@ -28,6 +28,9 @@ class  BreakViewController: UIViewController {
         tune.play()
         
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         let myImage: UIImage = UIImage(named: "clear.jpg")!
         let myImageView: UIImageView = UIImageView()
         myImageView.image = myImage

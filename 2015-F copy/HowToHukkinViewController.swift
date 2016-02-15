@@ -14,6 +14,10 @@ class HowToHukkinViewController: UIViewController {
         let fileURL = NSURL(fileURLWithPath: path!)
         let avAsset = AVURLAsset(URL: fileURL, options: nil)
         
+        
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         // AVPlayerに再生させるアイテムを生成.
         playerItem = AVPlayerItem(asset: avAsset)
         

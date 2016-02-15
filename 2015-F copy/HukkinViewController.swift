@@ -22,6 +22,9 @@ class HukkinViewController: UIViewController {
         
 
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         let myImage = UIImage(named: "IMG_0586.jpg")
         let myImageView = UIImageView()
         myImageView.image = myImage!

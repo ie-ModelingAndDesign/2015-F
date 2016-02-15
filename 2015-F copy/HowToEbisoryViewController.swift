@@ -19,6 +19,9 @@ class HowToEbisoryViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         let myImage = UIImage(named: "ebisory.jpg")
         let myImageView = UIImageView()
         myImageView.image = myImage!

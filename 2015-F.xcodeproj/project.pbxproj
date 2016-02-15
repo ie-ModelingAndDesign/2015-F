@@ -47,6 +47,8 @@
 		8D7A47711C4FB2F1000FC3C6 /* gannbare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A47701C4FB2F1000FC3C6 /* gannbare.wav */; };
 		8DD96CE11C4F6626000B2342 /* haikintaikan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DD96CE01C4F6626000B2342 /* haikintaikan.wav */; };
 		8DD96CE31C4F67CC000B2342 /* perfect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DD96CE21C4F67CC000B2342 /* perfect.wav */; };
+		8DD9BA331C721506006D65C6 /* singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9BA321C721506006D65C6 /* singleton.swift */; };
+		8DD9BA351C721552006D65C6 /* 見慣れた光景.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DD9BA341C721552006D65C6 /* 見慣れた光景.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		8D7A47701C4FB2F1000FC3C6 /* gannbare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gannbare.wav; sourceTree = "<group>"; };
 		8DD96CE01C4F6626000B2342 /* haikintaikan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = haikintaikan.wav; sourceTree = "<group>"; };
 		8DD96CE21C4F67CC000B2342 /* perfect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = perfect.wav; sourceTree = "<group>"; };
+		8DD9BA321C721506006D65C6 /* singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleton.swift; sourceTree = "<group>"; };
+		8DD9BA341C721552006D65C6 /* 見慣れた光景.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "見慣れた光景.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,11 +217,13 @@
 				8D471BB31C5A3731002099FF /* title.png */,
 				8D1B2AB41C38FC24007C1FF7 /* Info.plist */,
 				8D1B2AB51C38FC24007C1FF7 /* MenuViewController.swift */,
+				8DD9BA341C721552006D65C6 /* 見慣れた光景.mp3 */,
 				8D1B2AB61C38FC24007C1FF7 /* start.jpg */,
 				8D1B2AB71C38FC24007C1FF7 /* StartDietViewController.swift */,
 				8D1B2AB81C38FC24007C1FF7 /* StartViewControll.swift */,
 				8D1B2AB91C38FC24007C1FF7 /* UserSettingViewController.swift */,
 				8D1B2ABA1C38FC24007C1FF7 /* ViewController.swift */,
+				8DD9BA321C721506006D65C6 /* singleton.swift */,
 			);
 			name = "2015-F";
 			path = "2015-F copy";
@@ -341,6 +347,7 @@
 				8D1B2AC11C38FC24007C1FF7 /* Main.storyboard in Resources */,
 				8D1B2AC01C38FC24007C1FF7 /* LaunchScreen.storyboard in Resources */,
 				8D7A47711C4FB2F1000FC3C6 /* gannbare.wav in Resources */,
+				8DD9BA351C721552006D65C6 /* 見慣れた光景.mp3 in Resources */,
 				8D1B2AD71C3900E2007C1FF7 /* man.png in Resources */,
 				8D1B2AC41C38FC24007C1FF7 /* ebisory.jpg in Resources */,
 				8D1B2ABF1C38FC24007C1FF7 /* Assets.xcassets in Resources */,
@@ -388,6 +395,7 @@
 				8D1B2AC21C38FC24007C1FF7 /* BreakViewController.swift in Sources */,
 				8D1B2AD21C38FC24007C1FF7 /* UserSettingViewController.swift in Sources */,
 				8D1B2ABD1C38FC24007C1FF7 /* AllClearViewController.swift in Sources */,
+				8DD9BA331C721506006D65C6 /* singleton.swift in Sources */,
 				8D2EC48F1C48B0D0007ADE92 /* listViewController.swift in Sources */,
 				8D1B2AD01C38FC24007C1FF7 /* StartDietViewController.swift in Sources */,
 			);

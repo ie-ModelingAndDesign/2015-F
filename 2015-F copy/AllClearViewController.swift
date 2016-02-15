@@ -21,6 +21,9 @@ class AllClearViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         //perfect music
         let tuneURL:NSURL = NSBundle.mainBundle().URLForResource("perfect", withExtension: "wav")!
         do { tune = try AVAudioPlayer(contentsOfURL: tuneURL, fileTypeHint: nil) } catch let error as NSError {

@@ -18,6 +18,9 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         let button = UIButton()
         button.frame = CGRectMake(0,0,200,40)
         button.backgroundColor = UIColor.redColor()

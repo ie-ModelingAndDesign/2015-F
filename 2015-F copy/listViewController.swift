@@ -16,6 +16,9 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //play backbround music
+        MusicHelper.sharedHelper.playBackgroundMusic()
+        
         let homebutton = UIButton()
         homebutton.frame = CGRectMake(0,0,100,100)
         let homebuttonImage:UIImage = UIImage(named: "home.png")!;
